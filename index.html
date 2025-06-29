@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Expense Tracker</h2>
+    <h3 id="balance">Balance: $0.00</h3>
+    <div class="summary">
+      <div>Income: <span id="income">$0.00</span></div>
+      <div>Expense: <span id="expense">$0.00</span></div>
+    </div>
+
+    <form id="transaction-form">
+      <input type="text" id="text" placeholder="Enter description" required />
+      <input type="number" id="amount" placeholder="Enter amount" required />
+      <button type="submit">Add Transaction</button>
+    </form>
+
+    <ul id="transaction-list"></ul>
+  </div>
+
+  <!-- Make sure the script is correctly linked -->
+  <script src="script.js"></script>
+</body>
+</html>
